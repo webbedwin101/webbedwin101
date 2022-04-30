@@ -15,7 +15,11 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <script src="https://kit.fontawesome.com/47ace9daa2.js" crossorigin="anonymous"></script>
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -25,7 +29,252 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand text-light">Edwin's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" ><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navmenu"> 
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#learn" class="nav-link text-light">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#questions" class="nav-link text-light">Questions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contactinfo" class="nav-link text-light">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Showcase-->
+<section class="bg-success text-light p-5 p-lg-0 pt-lg-5 text-center tx-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1>My <span class="text-warning">Web Development</span> Journey. </h1>
+                <p class="lead my-4">
+                    I am nearing completion of a Junior Web Development Certificate and have experience with HTML, CSS, JavaScript, mySQL, NodeJS, Express. 
+                </p>
+                <a class="btn btn-primary btn-lg btn-light text-primary" href="#viewprojects">Start The Tour</a>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_programming_re_kg9v.svg" alt="">
+        </div>
+    </div>
+</section>
+<!-- Newsletter -->
+<section class="bg-dark text-light p-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0">
+                Sign Up For My Newsletter
+            </h3>
+            <div class="input-group news-input">
+                <input type="text" class="form-control" placeholder="Enter Email" >
+                <button class="btn btn-primary text-white btn-lg" type="button" id="viewprojects" >Sign Up</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- boxes -->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md">
+                <div class="card bg-success text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Project1</h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio iure vero distinctio quibusdam explicabo, dicta cumque, quis laboriosam nemo aut quia. Assumenda, repellat sapiente at distinctio corrupti molestias adipisci voluptate.
+                        </p>
+                        <a href="#" class="btn btn-light">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-secondary text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-person-square"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Project2</h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio iure vero distinctio quibusdam explicabo, dicta cumque, quis laboriosam nemo aut quia. Assumenda, repellat sapiente at distinctio corrupti molestias adipisci voluptate.
+                        </p>
+                        <a href="#" class="btn btn-dark">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-success text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Project Three</h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio iure vero distinctio quibusdam explicabo, dicta cumque, quis laboriosam nemo aut quia. Assumenda, repellat sapiente at distinctio corrupti molestias adipisci voluptate.
+                        </p>
+                        <a href="#" class="btn btn-light">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- learn sections -->
+<section id="learn" class="p-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <img src="/img/undraw_progressive_app_m-9-ms.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md p-5">
+                <h2>Learn The Fundamentals</h2>
+                <p class="lead">
+                    Learning how a computer functions and how the internet is structured will prepare you for understanding the Web Development landscape. Learning a Programming language will help you interact with the underlying technologies used in Web Development. 
+                </p>
+                <p> The primary programming language for Web Development is JavaScript. </p>
+                <a href="#blogpage" class="btn btn-dark mt-3">
+                    <i class="bi bi-chevron-right">Read More</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="learn" class="p-5 bg-success text-light">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+                <h2>Learn Full Stack Web Development</h2>
+                <p class="lead">
+                    Front End Development focuses on Client Side. Back End Development emphasizes the Server Side. Full Stack Development takes the development process from start to finish while considering both client and server needs.  
+                </p>
+                <p>Web Development relies on several layers of integrated technologies that work together to create a fully functional website.</p>
+                <a href="#blogpage" class="btn btn-light mt-3">
+                    <i class="bi bi-chevron-right">Read More</i>
+                </a>
+            </div>
+            <div class="col-md">
+                <img src="/img/undraw_content_team_re_4q47.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Question Accordion -->
+<section class="p-5"id="questions" >
+<div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion accordion-flush" id="questions">
+            <!-- item1 -->
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+            What is Web Development?
+            </button>
+        </h2>
+        <div id="question-one" class="accordion-collapse collapse" >
+            <div class="accordion-body">Web Development is the intersection for creative abilities and technical expertise in order to design, create and maintain secure websites which solve customer's needs and deliver quality user experiences.
+                <a href="https://www.geeksforgeeks.org/web-development/">More info</a> 
+            </div>
+            </div>
+            <!-- item2 -->
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+            Why should I learn it? 
+            </button>
+        </h2>
+        <div id="question-two" class="accordion-collapse collapse" >
+            <div class="accordion-body">Becoming a Web Deveoloper has its advantages which may include better pay, new and rewarding projects, consistent professional growth opportunities, and a better work-life balance. Understanding your motivations for learning Web Development is key for successfully transitioning into a growing and innovative career. <a href="https://www.freecodecamp.org/news/what-is-web-development-how-to-become-a-web-developer-career-path/">More info</a></div>
+            </div>
+        </div>
+            <!-- item3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+            How long does it take to learn?
+            </button>
+            </h2>
+            <div id="question-three" class="accordion-collapse collapse" >
+            <div class="accordion-body">Learning Web Development varies from person to person and really depends on your learning style and how well you can leverage resources to develop the necessary foundational knowledge. <br><br> My estimate for anyone who already has introductory experience with a programming language and has a solid technology background is <i>3-6months</i>. This estimate includes learning the foundational knowledge of Web Development and can be accomplished while working. <br><br>Learning Web Development without a solid background in Technology but consistent learning sessions such as a coding bootcamp and self study would take approximately <i>8-12months. </i></div>
+            </div>
+        </div>
+            <!-- item4 -->        
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                How do I get started?
+            </button>
+            </h2>
+            <div id="question-four" class="accordion-collapse collapse" >
+            <div class="accordion-body">
+                Identify your knowledge gaps. Know your specific situation. Leverage online resources to build a roadmap. Decide on a plan and take action. Remember consistent steps are more likely to produce success than big leaps. Here's a <a href="https://www.freecodecamp.org/news/what-is-a-full-stack-developer-full-stack-engineer-guide/"> link </a>to help you get started. 
+            </div>
+            </div>
+        </div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="p-5" id="contactinfo">
+<div class="container">
+    <div class="row g-4">
+        <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                    <span class="fw-bold">Main Location: </span> CSRA Augusta, GA 30901
+                </li>
+                <li class="list-group-item">
+                    <span class="fw-bold">Phone: </span> Available Upon Request
+                </li>
+                <li class="list-group-item">
+                    <span class="fw-bold">Email: </span>  webb.edwin101@gmail.com
+                </li>
+            </ul>
+        </div>
+        <div class="col-md">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+
+</section>
+<!-- footer -->
+<footer class="p-5 bg-dark text-white text-center position relative">
+<div class="container">
+    <div class="flex-items">
+        <h3 class="mb-1">Stay Connected</h3>
+        <div class="social">
+        <a href="https://github.com/webbedwin101" target="_blank"><i class="fab fa-github mx-2"></i></a>
+        <a href="https://www.linkedin.com/in/webbedwin101/" target="blank"><i class="fab fa-linkedin mx-2"></i></a>
+        </div>
+    <p class="lead">Copyright &copy; 2022 Edwin's Profile</p>
+    <!-- <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+    </a> -->
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoid2ViYmUzMiIsImEiOiJja3p2cWNnZm0wMmZzMnZwdDc2NzVhNjI4In0.yNJaEAeK5fl-FcRD2RP6iQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-81.966667, 33.466667],
+        zoom: 13,
+    });
+</script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
