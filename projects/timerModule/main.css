@@ -1,0 +1,40 @@
+body {
+    background-color: #ddd;
+    margin: 24px;
+    background-image: url('https://static01.nyt.com/images/2020/11/02/arts/30mandlorian-recap/30mandlorian-recap-superJumbo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.timer {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 24px 32px; 
+    border-radius: 30px; 
+    background-color: #fff;
+}
+
+.timer__part {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.timer__btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px; 
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: rgb(111, 36, 231);
+    cursor: pointer;
+}
+
+.timer__btn--start {
+    background-color: rgb(34, 173, 16);
+}
+
+.timer__btn--stop {
+    background-color: rgb(152, 15, 15);
+}
