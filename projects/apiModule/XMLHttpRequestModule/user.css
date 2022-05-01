@@ -1,0 +1,39 @@
+:root {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 10px;
+	color: #000;
+	background-color: #eee;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+#users {
+	padding: 5px;
+	border: 1px solid red;
+	width: 45%;
+}
+
+#userView {
+	border: 1px solid green;
+	width: 45%;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+table {
+	width: 100%;
+}
+table,th,td {
+	border: 1px solid #666;
+	border-collapse: collapse;
+}
